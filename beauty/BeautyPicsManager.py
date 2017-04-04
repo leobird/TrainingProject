@@ -36,7 +36,7 @@ class BeautyPicsManager:
                   print catchUrl+'are abnormal'
 
     def checkPicsUrl(self,url):
-          urlMatchResult=re.match(r'^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+\/[^\s]+\/[^\s]+\.htm',url)
+          urlMatchResult=re.match(r'^((https|http|ftp|rtsp|mms)?:\/\/)[^\s\/]+\/[^\s\/]+\/[\d]+.htm',url)
           if (urlMatchResult != None):return True
           else:return False
 
